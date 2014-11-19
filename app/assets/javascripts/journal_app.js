@@ -4,7 +4,8 @@ window.JournalApp = {
   Views: {},
   Routers: {},
   initialize: function() {
-    
+    new JournalApp.Routers.Router({ $el: $('div#journal-app') });
+    Backbone.history.start();
   }
 };
 

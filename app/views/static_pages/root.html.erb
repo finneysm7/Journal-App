@@ -1,18 +1,25 @@
 <h1>OUR JOURNAL APP</h1>
+<div id="journal-app">
+ 
 
-<div id='post-index'></div>
+
+</div>
+
+
+
+
 
 <script>
- $(function() { 
-    var posts = new JournalApp.Collections.Posts();
-    var view = new JournalApp.Views.PostsIndex({
-      collection: posts
-    });
-    $('#post-index').html(view.$el);
-    posts.fetch({
-      success: function () {
-        view.render();
-      }
-    });
-  });
+  // $(function() {
+ //    posts = new JournalApp.Collections.Posts();
+ //    view = new JournalApp.Views.PostsIndex({
+ //      collection: posts
+ //    });
+ //    $('#post-index').html(view.$el);
+ //    posts.fetch({
+ //      success: function () {
+ //        view.render();
+ //      }
+ //    });
+ //  })
 </script>

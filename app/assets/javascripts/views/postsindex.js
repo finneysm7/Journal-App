@@ -6,12 +6,14 @@ JournalApp.Views.PostsIndex = Backbone.View.extend({
   },
   
   initialize: function(){
-    this.listenTo(this.collection, "remove", this.render);
+    var events = "add remove change:title reset"
+    this.listenTo(this.collection, events, this.render);
   },
   
   render: function(){
     var content = this.template({posts: this.collection});
     this.$el.html(content);
+    return this;
   },
   
   deletePost: function(event){

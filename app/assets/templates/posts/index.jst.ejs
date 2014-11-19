@@ -2,7 +2,7 @@
 <ul>
   
 <% posts.forEach(function(post){ %>
-  <li><%= post.escape('title') %>
+  <li><a href="#posts/<%= post.get('id') %>"><%= post.escape('title') %></a>
     <button class='delete-button' data-id="<%= post.id %>">Delete</button>
   </li>
 <% }); %>
