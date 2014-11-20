@@ -1,4 +1,9 @@
-<h3><%= post.escape('title') %></h3>
-<p><%= post.escape('body') %></h3>
+<div id="title-field">
+  <h3 class="post-title"><%= post.escape('title') %></h3>
+</div>
+<div id="body-field">
+<p class="post-body"><%= post.escape('body') %></p>
   <br>
+</div>
+
 <a href='#'>Back</a>

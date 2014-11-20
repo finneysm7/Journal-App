@@ -13,3 +13,36 @@
  *= require_tree .
  *= require_self
  */
+body {
+  padding: 0px;
+  margin: 0px;
+}
+header {
+  font-size: 50px;
+  padding: 10px;
+  height: 74px;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  border-bottom: 2px solid darkgray;
+}
+
+#container {
+}
+#journal-app {
+  padding: 50px;
+  position:absolute;
+  left: 200px;
+}
+.errors, .error {
+  color: red;
+  list-style: none;
+}
+
+#sidebar {
+  position:absolute;
+  width: 200px;
+  left: 0;
+  height: 100%;
+  background-color: lightgray;
+}
